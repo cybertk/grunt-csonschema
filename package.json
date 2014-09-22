@@ -1,6 +1,6 @@
 {
   "name": "grunt-csonschema",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Grunt plugin to compile csonschema to jsonschema",
   "main": "lib/index.js",
   "directories": {
