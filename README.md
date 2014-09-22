@@ -1,10 +1,10 @@
-## grunt-contrib-csonschema
+## grunt-csonschema
 
 Compile csonschema to jsonschema
 
-[![Build Status](http://img.shields.io/travis/cybertk/grunt-contrib-csonschema.svg?style=flat)](https://travis-ci.org/cybertk/grunt-contrib-csonschema)
-[![Dependency Status](https://david-dm.org/cybertk/grunt-contrib-csonschema.png)](https://david-dm.org/cybertk/grunt-contrib-csonschema)
-[![Coverage Status](https://coveralls.io/repos/cybertk/grunt-contrib-csonschema/badge.png?branch=master)](https://coveralls.io/r/cybertk/grunt-contrib-csonschema?branch=master)
+[![Build Status](http://img.shields.io/travis/cybertk/grunt-csonschema.svg?style=flat)](https://travis-ci.org/cybertk/grunt-csonschema)
+[![Dependency Status](https://david-dm.org/cybertk/grunt-csonschema.png)](https://david-dm.org/cybertk/grunt-csonschema)
+[![Coverage Status](https://coveralls.io/repos/cybertk/grunt-csonschema/badge.png?branch=master)](https://coveralls.io/r/cybertk/grunt-csonschema?branch=master)
 
 ## Features
 
@@ -13,7 +13,7 @@ Compile csonschema to jsonschema
 
 [Node.js][] and [NPM][] is required.
 
-    $ npm install grunt-contrib-csonschema
+    $ npm install grunt-csonschema
 
 [Node.js]: https://npmjs.org/
 [NPM]: https://npmjs.org/
