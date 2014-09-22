@@ -8,14 +8,11 @@ module.exports = (grunt) ->
 
     @files.forEach ({src, dest}) ->
       [source] = src
+      obj = csonschema.parseSync source
 
-      content = csonschema.parse source, (err, obj) ->
-
-        json = JSON.stringify(obj, null, 2)
-
-        grunt.file.write(dest, json)
-        grunt.log.writeln("File #{dest.cyan} created.")
-
+      json = JSON.stringify(obj, null, 2)
+      grunt.file.write(dest, json)
+      grunt.log.writeln("File #{dest.cyan} created.")
 
     fileCount = @files.length
     grunt.log.ok("#{fileCount} #{grunt.util.pluralize(fileCount, 'file/files')} compiled to jsonschema.")

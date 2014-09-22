@@ -66,7 +66,7 @@ module.exports = (grunt) ->
 
   grunt.registerTask "test", [
     "clean"
-    "coffee"
+    # "coffee", coffee task should invoke before `grunt test`
     "csonschema"
     "mochaTest"
   ]
