@@ -7,8 +7,12 @@ module.exports = (grunt) ->
     rootObject ?= false
 
     @files.forEach ({src, dest}) ->
+      grunt.log.debug("Compiling #{src} to #{dest}")
+
       [source] = src
       obj = csonschema.parseSync source
+
+      grunt.log.debug("Parsed #{src}")
 
       json = JSON.stringify(obj, null, 2)
       grunt.file.write(dest, json)
