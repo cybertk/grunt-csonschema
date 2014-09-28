@@ -3,14 +3,14 @@ csonschema = require 'csonschema'
 module.exports = (grunt) ->
   grunt.registerMultiTask 'csonschema', 'Compile csonschema files to jsonschema', ->
     options = @options()
-    {rootObject} = options
+    {rootObject, $_} = options
     rootObject ?= false
 
     @files.forEach ({src, dest}) ->
       grunt.log.debug("Compiling #{src} to #{dest}")
 
       [source] = src
-      obj = csonschema.parseSync source
+      obj = csonschema.parseSync source, $_
 
       grunt.log.debug("Parsed #{src}")
 

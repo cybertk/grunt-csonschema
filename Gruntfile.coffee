@@ -51,6 +51,8 @@ module.exports = (grunt) ->
     # Configuration to be run (and then tested).
     csonschema:
       compileDefault:
+        options:
+          $_: 'test/fixtures/extend.type'
         expand: true
         flatten: true
         src: [

@@ -1,3 +1,4 @@
+schemas/
 src/
 test/
 .travis.yml
